@@ -1,0 +1,11 @@
+{% extends 'products/view_detail.html' %}
+
+{% block title %}
+    Заголовок
+{% endblock %}
+
+{% block content %}
+    {% for product in products %}
+        {% include 'Includes/product_card.html' %}
+    {% endfor %}
+{% endblock %}
